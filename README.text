@@ -1,0 +1,21 @@
+依赖包作用：
+css-loader 用于加载.css文件，并且转换成commonjs对象
+style-loader 将样式通过<style>标签插入到head中（style-loader配置在css-loader前）
+less-loader 用于将less转换成css(同时安装less)
+eg: 
+    use: [
+        'style-loader', // 将js字符串生成为style节点（最后执行）
+        'css-loader', // 将css转成CommonJS模块（其次执行）
+        'sass-loader' // 将sass转成css（最先执行）
+    ]
+file-loader 用于处理文件（图片跟文字）
+url-loaser 用于图片文字，还能对图片进行base64处理
+eg: 
+    use: [
+        {
+            loader: 'url-loader',
+            options: {
+                limit: 102400 //小于102400处理成base64，大于的处理成跟file-loader一样的图片
+            }
+        }
+    ],
