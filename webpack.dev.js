@@ -2,6 +2,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const friendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 module.exports = {
     entry: {
         index: './src/index.js',
@@ -12,6 +13,7 @@ module.exports = {
         filename: '[name].js'
     },
     mode: 'development',
+    stats: 'none',
     module: {
         rules: [
             {
@@ -65,7 +67,8 @@ module.exports = {
         poll: 1000
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new friendlyErrorsWebpackPlugin()
     ],
     devServer: {
         contentBase: './dist',
