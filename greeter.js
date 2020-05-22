@@ -32,9 +32,3 @@ var b = /** @class */ (function (_super) {
 }(a));
 ;
 let a
-let b
-let fix
-<<<<<<< HEAD
-=======
-let fix2
->>>>>>> fix2
