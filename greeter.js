@@ -30,6 +30,4 @@ var b = /** @class */ (function (_super) {
     };
     return b;
 }(a));
-;
-let a
-let b
+; 
