@@ -33,5 +33,3 @@ var b = /** @class */ (function (_super) {
 ;
 let a
 let b
-let fix
-let fix2
