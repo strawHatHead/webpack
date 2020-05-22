@@ -32,3 +32,4 @@ var b = /** @class */ (function (_super) {
 }(a));
 ;
 let a
+let b
